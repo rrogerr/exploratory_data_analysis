@@ -18,3 +18,10 @@ class(distxy)
 h_clustering <- hclust(distxy)
 class(distxy)
 plot(h_clustering)
+
+######################### HEATMAPS #########################
+
+set.seed(143)
+dataMatrix <- as.matrix(dataFrame)
+heatmap(dataMatrix)
+dataFrame
