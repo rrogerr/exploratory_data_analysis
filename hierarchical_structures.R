@@ -11,8 +11,10 @@ text(x + 0.05, y + 0.05, labels = as.character(1:12))
 
 dataFrame <- data.frame(x = x, y = y)
 distxy <- dist(dataFrame)
+class(distxy)
 
 ######################## CLUSTERING ########################
 
 h_clustering <- hclust(distxy)
+class(distxy)
 plot(h_clustering)
