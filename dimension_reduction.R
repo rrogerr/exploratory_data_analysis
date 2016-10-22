@@ -21,7 +21,7 @@ hh <- hclust(dist(data_matrix))
 data_matrix_ordered <- data_matrix[hh$order, ]
 par(mfrow = c(1,3))
 image(t(data_matrix_ordered)[,nrow(data_matrix_ordered):1])
-plot(rowMeans(data_matrix_ordered), 40:1, xlab = "Row Mean", 
+plot(rowMeans(data_matrix_ordered), 40:1, xlab = "Row Mean",
      ylab = "Row", pch = 19)
-plot(colMeans(data_matrix_ordered), xlab = "Column", 
+plot(colMeans(data_matrix_ordered), xlab = "Column",
      ylab = "Column Mean", pch = 19)
